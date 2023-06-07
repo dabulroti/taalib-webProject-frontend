@@ -12,13 +12,13 @@ import '../Styles/nav.css'
 import Home from "../Pages/homepage";
 
 
-function Components(){
-  const logout = () => {
-    localStorage.clear();
-    window.location.href = "/login";
-  }
+const logout = () => {
+  localStorage.clear();
+  window.location.href = "/login";
+}
 
-  
+function Components(){
+
     return(
         <>
 <nav className="navbar navbar-expand-lg navbar-light bg-dark">
