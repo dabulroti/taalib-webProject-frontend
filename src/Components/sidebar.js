@@ -31,7 +31,7 @@ function Components(){
       <ul className="navbar-nav">
         <li className="nav-item">
           {/* <a className="nav-link" href="#">Home</a> */}
-          <img className="logout-image" src="/Resources/logout.png" onClick={logout()}/>
+          <img className="logout-image" src="/Resources/logout.png" onClick={()=>{logout()}}/>
         </li>
       </ul>
     </div>
