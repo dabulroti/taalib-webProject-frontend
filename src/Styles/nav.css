@@ -1,0 +1,38 @@
+*{
+  font-family: Garamond, serif;
+  font-size: 20px;
+}
+
+.logo {
+  color: white;
+  padding-left: 3% ;
+  font-size: 50px;
+}
+
+.logout-image {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav .nav-item .garamond-text {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-item .garamond-text h4 {
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-item .garamond-text img {
+  width: 30px;
+  height: 30px;
+}
+
+.sidebarli{
+  color:white
+}
