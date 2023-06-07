@@ -1,4 +1,4 @@
-import React, {useState,useEffect,useNavigate} from 'react';
+import React, {useState,useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -8,8 +8,8 @@ function Home(){
     const [token, setToken] = useState('')
     useEffect(()=>{
         if(!localStorage.getItem('user')){
-            const navigate = useNavigate()
-            navigate("/login");        }
+            window.location.href = '/login';
+        }
         else{
             setUser(JSON.parse(localStorage.getItem('user')).user);
             setToken(localStorage.getItem('token'));

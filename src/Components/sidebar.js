@@ -12,11 +12,9 @@ import '../Styles/nav.css'
 import Home from "../Pages/homepage";
 
 
-
 const logout = (e) => {
   localStorage.clear();
-  const navigate = useNavigate()
-  navigate("/login");
+  window.location.href = "/login";
 }
 
 function Components(){
@@ -33,8 +31,8 @@ function Components(){
       <ul className="navbar-nav">
         <li className="nav-item">
           {/* <a className="nav-link" href="#">Home</a> */}
-          <a className="nav-link" href="#" onClick={(e)=>logout(e)}>logout</a>
-          <img className="logout-image" src="/Resources/logout.png"/>
+          {/* <a className="nav-link" href="#" >logout</a> */}
+          <img className="logout-image" src="/Resources/logout.png" onClick={(e)=>logout(e)}/>
         </li>
       </ul>
     </div>
