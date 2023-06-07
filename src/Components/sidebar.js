@@ -13,6 +13,12 @@ import Home from "../Pages/homepage";
 
 
 function Components(){
+  const logout = () => {
+    localStorage.clear();
+    window.location.href = "/login";
+  }
+
+  
     return(
         <>
 <nav className="navbar navbar-expand-lg navbar-light bg-dark">
@@ -25,7 +31,7 @@ function Components(){
       <ul className="navbar-nav">
         <li className="nav-item">
           {/* <a className="nav-link" href="#">Home</a> */}
-          <img className="logout-image" src="/Resources/logout.png"/>
+          <img className="logout-image" src="/Resources/logout.png" onClick={logout()}/>
         </li>
       </ul>
     </div>
