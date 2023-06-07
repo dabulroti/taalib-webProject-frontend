@@ -8,8 +8,8 @@ function Home(){
     const [token, setToken] = useState('')
     useEffect(()=>{
         if(!localStorage.getItem('user')){
-            useNavigate('/login');
-        }
+            const navigate = useNavigate()
+            navigate("/login");        }
         else{
             setUser(JSON.parse(localStorage.getItem('user')).user);
             setToken(localStorage.getItem('token'));

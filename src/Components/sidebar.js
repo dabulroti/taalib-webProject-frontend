@@ -15,7 +15,8 @@ import Home from "../Pages/homepage";
 
 const logout = (e) => {
   localStorage.clear();
-  useNavigate("/login");
+  const navigate = useNavigate()
+  navigate("/login");
 }
 
 function Components(){
