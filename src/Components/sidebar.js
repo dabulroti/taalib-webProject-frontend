@@ -12,9 +12,10 @@ import '../Styles/nav.css'
 import Home from "../Pages/homepage";
 
 
+
 const logout = (e) => {
   localStorage.clear();
-  window.location.href = "/login";
+  useNavigate("/login");
 }
 
 function Components(){
