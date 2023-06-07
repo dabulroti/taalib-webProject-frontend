@@ -30,7 +30,7 @@ const LoginForm = () => {
         console.log(response.data);
         localStorage.setItem("user", JSON.stringify(response.data));
         localStorage.setItem("token", JSON.stringify(response.data.token));
-        navigate("/");
+        window.location.href = "/";
       })
       .catch((error) => {
         console.log(error);
